@@ -1,0 +1,51 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "n8nio/n8n:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": 5678
+    }
+  ],
+  "Logging": "/var/log/nginx",
+  "Environment": [
+    {
+      "Name": "N8N_BASIC_AUTH_ACTIVE",
+      "Value": "true"
+    },
+    {
+      "Name": "N8N_BASIC_AUTH_USER",
+      "Value": "your-username"
+    },
+    {
+      "Name": "N8N_BASIC_AUTH_PASSWORD",
+      "Value": "your-secure-password"
+    },
+    {
+      "Name": "N8N_HOST",
+      "Value": "0.0.0.0"
+    },
+    {
+      "Name": "N8N_PORT",
+      "Value": "5678"
+    },
+    {
+      "Name": "N8N_PROTOCOL",
+      "Value": "http"
+    },
+    {
+      "Name": "NODE_ENV",
+      "Value": "production"
+    },
+    {
+      "Name": "TZ",
+      "Value": "Europe/Madrid"
+    },
+    {
+      "Name": "N8N_SECURE_COOKIE",
+      "Value": "false"
+    }
+  ]
+}
