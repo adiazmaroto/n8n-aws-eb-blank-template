@@ -7,6 +7,8 @@ ENV_NAME="n8n-env"
 REGION="eu-west-1"
 PLATFORM="Docker running on 64bit Amazon Linux 2023"
 
+# Este script automatiza el despliegue de n8n en AWS Elastic Beanstalk
+
 echo "🚀 Verificando herramientas necesarias..."
 
 if ! command -v aws &> /dev/null; then
